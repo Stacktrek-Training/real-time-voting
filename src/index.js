@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Navbar from './pages/Navbar';
+import Result from './pages/Result'
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,14 +15,23 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: 
+    <div>
+      <Navbar />
+    </div>,
+  },
+  {
+    path: "/results",
+    element: 
+    <div>
+      <Result />
+    </div>,
   },
 ]);
   
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
