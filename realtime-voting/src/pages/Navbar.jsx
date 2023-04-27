@@ -11,13 +11,13 @@ const Navbar = () => {
         <div>
             {/* top navigation bar */}
             <nav class="bg-white border-gray-200 dark:bg-gray-900">
-                <div class="border-b max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
+                <div class="border-b ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
                     <a href="/" class="inline-flex items-center">
-                        <img src={logo} class="h-24 mr-3 w-24" />
+                        <img src={logo} class="h-15 ml-9 w-20" />
                     </a>
-                    <div class="flex md:order-2 mt-[-3rem]">
+                    <div class="flex md:order-2 mt-[2.1rem]">
                         <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
-                            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                            <svg class="w-5 mt-[2-rem] h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                             <span class="sr-only">Search</span>
                         </button>
                         <div class="relative hidden md:block">
@@ -32,7 +32,7 @@ const Navbar = () => {
                             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                         </button>
                     </div>
-                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mt-[-2.5rem]" id="navbar-search">
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mt-[4rem]" id="navbar-search">
                         <div class="relative mt-3 md:hidden">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                 <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
@@ -62,7 +62,7 @@ const Navbar = () => {
 
                     <aside id="separator-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
                         {/* side bar */}
-                        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800 mt-20 border-r">
+                        <div class="h-full px-3 py-4 overflow-y-auto bg-blue-50 dark:bg-blue-800 mt-20 border-r">
                             <ul class="space-y-2 font-medium">
                                 <li>
                                     <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -103,15 +103,15 @@ const Navbar = () => {
             </nav>
 
             {/* create poll form */}
-            <div class="ml-[19.9rem] border mt-4 w-[55rem] block rounded-lg z-50 p-4">
+            <div class="ml-[19.9rem] border mt-4 w-[55rem] rounded-lg z-50 p-4">
                 <form class="w-full" autocomplete="off">
-                    <div class="mb-6 w-full ">
+                    <div class="mb-6">
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
                         <input class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Type Here" required />
                     </div>
 
-                    <h3 class="mb-4 font-semibold text-gray-900 dark:text-white">Types of Voting</h3>
-                    <ul class="items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                    <h3 class="mb-4 h-15 text-sm font-semibold text-gray-900 dark:text-white">Types of Voting</h3>
+                    <ul class="items-center  text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
                         <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                             <div class="flex items-center pl-3">
                                 <input id="vue-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
@@ -131,20 +131,27 @@ const Navbar = () => {
                             </div>
                         </li>
                     </ul>
-                    <div class="mb-6">
+                    <div class="mb-6 h-2" autocomplete='off'>
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Option</label>
-                        <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+                        <input autocomplete='off' type="text" class="shadow-sm bg-blue-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
                     </div>
                     <div class="mb-6">
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
-                        <input class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+                        <input autocomplete='off' class="shadow-sm bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
                     </div>
-                    <div class="flex items-start mb-6">
-                        <div class="flex items-center h-5">
-                            <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-                        </div>
+                    <div class="mb-8">
+                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                        <input autocomplete='off' class="shadow-sm bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
                     </div>
-                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                    <div class=' mt-20 h-full'>
+                    <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-9 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                        <span class="relative px-5 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                            Cyan to blue
+                        </span>
+                    </button>
+                    
+                    <button type="submit" class="text-white flex mt-8 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
