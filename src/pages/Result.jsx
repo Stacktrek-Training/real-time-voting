@@ -4,6 +4,8 @@ import create from '../assets/icons/create.svg'
 import result from '../assets/icons/result.svg'
 import reports from '../assets/icons/reports.svg'
 import logo from '../assets/logo/logo.png'
+import signout from '../assets/icons/signout.svg'
+import userprofile from '../assets/icons/userprofile.svg'
 
 const Result = () => {
   return (
@@ -91,44 +93,59 @@ const Result = () => {
                     <span class="flex-1 ml-[-0.8rem] whitespace-nowrap">Reports</span>
                   </a>
                 </li>
+                <li>
+                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <img src={signout} class="w-[1.7rem]" />
+                    <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"></svg>
+                    <span class="flex-1 ml-[-0.8rem] whitespace-nowrap">Sign Out</span>
+                  </a>
+                </li>
               </ul>
               <ul class="pt-4 mt-72 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700">
 
                 <li>
                   {/**signout */}
-                </li>
-              </ul>
-            </div>
+                  <div class="flex items-center justify-center space-x-0.9 ml-[0.40rem]">
+                                        <img src={userprofile} class="w-[1.9rem] ml-[-2rem] " />
+                                        <div class="font-medium dark:text-white">
+                                            <div>Rustia Sabino</div>
+                                            <div class="text-sm text-gray-500 dark:text-gray-400">Joined in February 20,2023</div>
+                                        </div>
 
-          </aside>
-        </div>
 
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </aside>
+                </div>
       </nav>
 
       {/* view result */}
       <div class="ml-[19.9rem] border mt-4 w-[55rem] rounded-lg z-50 p-4">
-      <div class="mb-6">
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
-                        <input class="shadow-sm bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Type Here" required />
-                    </div>
-<div>
-  
-</div>
-      <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-  <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 mb-8 leading-none rounded-full" style={{ width: '45%' }}>43%</div>
-</div>
-<div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-  <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 mb-8 leading-none rounded-full" style={{ width: '45%' }}>43%</div>
-</div>
-<div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-  <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 mb-8 leading-none rounded-full" style={{ width: '45%' }}>43%</div>
-</div>
-<div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-  <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '45%' }}>45%</div>
-</div>
-<div class='border bg-black'>
+        <div class="mb-6">
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
+          <input class="shadow-sm bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Type Here" required />
+        </div>
+        <div>
 
-</div>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+          <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 mb-8 leading-none rounded-full" style={{ width: '3%' }}>3%</div>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+          <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 mb-8 leading-none rounded-full" style={{ width: '12%' }}>12%</div>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+          <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 mb-8 leading-none rounded-full" style={{ width: '20%' }}>20%</div>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+          <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '48%' }}>48%</div>
+        </div>
+        <div class='border bg-black'>
+
+        </div>
 
 
       </div>
