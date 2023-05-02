@@ -2,7 +2,7 @@ import React from 'react'
 import 'flowbite'
 import create from '../assets/icons/create.svg'
 import result from '../assets/icons/result.svg'
-import reports from '../assets/icons/reports.svg'
+import details from '../assets/icons/details.svg'
 import logo from '../assets/logo/logo.png'
 import signout from '../assets/icons/signout.svg'
 import userprofile from '../assets/icons/userprofile.svg'
@@ -87,13 +87,14 @@ const Result = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <img src={reports} class="w-[1.7rem]" />
+                  <a href="/report" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <img src={details} class="w-[1.7rem]" />
                     <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"></svg>
                     <span class="flex-1 ml-[-0.8rem] whitespace-nowrap">Reports</span>
                   </a>
                 </li>
                 <li>
+                  
                   <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                     <img src={signout} class="w-[1.7rem]" />
                     <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"></svg>
@@ -101,10 +102,10 @@ const Result = () => {
                   </a>
                 </li>
               </ul>
-              <ul class="pt-4 mt-72 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700">
+              <ul class="pt-5 mt-56 w-[16rem]  space-y-3 font-medium border-t border-blue-600 dark:border-gray-900">
 
                 <li>
-                  {/**signout */}
+                  {/**UserProfile */}
                   <div class="flex items-center justify-center space-x-0.9 ml-[0.40rem]">
                                         <img src={userprofile} class="w-[1.9rem] ml-[-2rem] " />
                                         <div class="font-medium dark:text-white">
@@ -124,7 +125,8 @@ const Result = () => {
 
       {/* view result */}
       <div class="ml-[19.9rem] border mt-4 w-[55rem] rounded-lg z-50 p-4">
-        <div class="mb-6">
+        <div class="mb-7">
+          
           <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
           <input class="shadow-sm bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Type Here" required />
         </div>
@@ -143,12 +145,19 @@ const Result = () => {
         <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
           <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: '48%' }}>48%</div>
         </div>
-        <div class='border bg-black'>
+        <ul class="pt-2 mt-[2rem] w-[53rem] space-y-3 font-medium border-t border-blue-600 dark:border-gray-900"></ul>
+        <h1 class="text- ml-96 text-blue-700  dark:text-white">Total Votes= 50</h1>
+       
 
-        </div>
+<a href="#" class="inline-flex items-center justify-center px-1 py-1 h-5 mt-5 text-base font-xs text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+    Back to Poll
+    <svg class="w-3.7 h-5 ml-3 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+</a>
 
+<div/>
 
       </div>
+      
     </div>
   )
 }

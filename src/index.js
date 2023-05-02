@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Navbar from './pages/Navbar';
 import Result from './pages/Result'
+import Report from './pages/Report'
 
 import {
   createBrowserRouter,
@@ -25,6 +26,13 @@ const router = createBrowserRouter([
     element: 
     <div>
       <Result />
+    </div>,
+  },
+  {
+    path: "/report",
+    element: 
+    <div>
+      < Report/>
     </div>,
   },
 ]);
