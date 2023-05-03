@@ -1,6 +1,7 @@
 import React from 'react'
 import 'flowbite'
 import logo from '../assets/logo/logo.png'
+import Ballot from '../assets/icons/Ballot.png'
 const About = () => {
   return (
     <div>
@@ -64,14 +65,15 @@ const About = () => {
     </figure>
     <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
-            <p class="my-4">Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!"</p>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Advantage</h3>
+            <p class="my-4">The incredible efficiency of online voting systems is one of its most important advantages. Voting on paper traditionally involves many processes, from printing ballots to manually tallying the results. Online voting makes all of it unnecessary.
+
+With an online system, you can quickly and easily distribute electronic ballots to each and every voter. Additionally, the system will automatically total the results after the voting period is over, saving you time and money and helping your organization.
+</p>
         </blockquote>
         <figcaption class="flex items-center justify-center space-x-3">
-            <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile picture"/>
+        <img src={Ballot} class="w-[6rem] mt-[-3rem]" />
             <div class="space-y-0.5 font-medium dark:text-white text-left">
-                <div>Roberta Casas</div>
-                <div class="text-sm text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
             </div>
         </figcaption>    
     </figure>
