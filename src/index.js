@@ -5,7 +5,7 @@ import App from './App';
 import Navbar from './pages/Navbar';
 import Result from './pages/Result'
 import Report from './pages/Report'
-
+import About from './pages/About'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -33,6 +33,13 @@ const router = createBrowserRouter([
     element: 
     <div>
       < Report/>
+    </div>,
+  },
+  {
+    path: "/about",
+    element: 
+    <div>
+      < About/>
     </div>,
   },
 ]);
