@@ -6,6 +6,7 @@ import Navbar from './pages/Navbar';
 import Result from './pages/Result'
 import Report from './pages/Report'
 import About from './pages/About'
+import Home from './pages/Home.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -40,6 +41,13 @@ const router = createBrowserRouter([
     element: 
     <div>
       < About/>
+    </div>,
+  },
+  {
+    path: "/home",
+    element: 
+    <div>
+      < Home/>
     </div>,
   },
 ]);
