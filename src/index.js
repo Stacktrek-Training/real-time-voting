@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Navbar from './pages/Navbar';
-import Result from './pages/Result'
-import Report from './pages/Report'
-import About from './pages/About'
-import Home from './pages/Home.jsx'
+import Navbar from './pages/Admin/Navbar';
+import Result from './pages/Admin/Result'
+import Report from './pages/Admin/Report'
+import About from './pages/Admin/AboutPage'
+import Home from './pages/Admin/Home.jsx'
+import Nav2 from './pages/Users/Navbar'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -48,6 +49,13 @@ const router = createBrowserRouter([
     element: 
     <div>
       < Home/>
+    </div>,
+  },
+  {
+    path: "/users/",
+    element: 
+    <div>
+      < Nav2/>
     </div>,
   },
 ]);

@@ -1,11 +1,11 @@
 import React from 'react'
 import 'flowbite'
-import create from '../assets/icons/create.svg'
-import result from '../assets/icons/result.svg'
-import details from '../assets/icons/details.svg'
-import logo from '../assets/logo/logo.png'
-import signout from '../assets/icons/signout.svg'
-import userprofile from '../assets/icons/userprofile.svg'
+import create from '../../assets/icons/create.svg'
+import result from '../../assets/icons/result.svg'
+import details from '../../assets/icons/details.svg'
+import logo from '../../assets/logo/logo.png'
+import signout from '../../assets/icons/signout.svg'
+import userprofile from '../../assets/icons/userprofile.svg'
 
 const Result = () => {
   return (
@@ -20,7 +20,7 @@ const Result = () => {
           <div class="w-[20rem] mt-2 ml-60">
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <a href="#" class="block py-3 text-[1.1rem] w-9 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 mr-20" aria-current="page">Home</a>
+                <a href="home" class="block py-3 text-[1.1rem] w-9 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 mr-20" aria-current="page">Home</a>
               </li>
               <li>
                 <a href="about" class="block py-2 pl-3 pr-4 text-[1.1rem] text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
