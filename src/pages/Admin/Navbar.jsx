@@ -6,13 +6,16 @@ import details from '../../assets/icons/details.svg'
 import logo from '../../assets/logo/logo.png'
 import userprofile from '../../assets/icons/userprofile.svg'
 import signout from '../../assets/icons/signout.svg'
+import imgcorrect from '../../assets/icons/imgcorrect.svg'
+import imgdelete from '../../assets/icons/imgdelete.svg'
+
 const Navbar = () => {
     return (
         <div>
             
             {/* top navigation bar */}
             <nav class="bg-white border-gray-200 dark:bg-gray-900">
-                <div class="border-b ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
+                <div class="border-b border-blue-200 ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
                     <a href="/" class="inline-flex items-center">
                         <img src={logo} class="h-7  ml-1 w-[13.8rem]" />
                     </a>
@@ -69,7 +72,7 @@ const Navbar = () => {
 
                     <aside id="separator-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
                         {/* side bar */}
-                        <div class="h-full px-3 py-4 overflow-y-auto bg-blue-50 dark:bg-blue-800 mt-20 border-r">
+                        <div class="h-full px-3 py-4 overflow-y-auto bg-blue-200 dark:bg-blue-800 mt-20 border-r">
                             <ul class="space-y-2 font-medium">
                                 <li>
                                     <a href="/" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -101,15 +104,15 @@ const Navbar = () => {
                                     </a>
                                 </li>
                             </ul>
-                            <ul class="pt-5 mt-56 w-[16rem]  space-y-3 font-medium border-t border-blue-600 dark:border-gray-900">
+                            <ul class="pt-5 mt-56 w-[14.30rem]  space-y-3 font-medium border-t border-white dark:border-gray-900">
 
                                 <li>
                                     {/**UserProfile */}
                                     <div class="flex items-center justify-center space-x-0.9 ml-[0.40rem]">
-                                        <img src={userprofile} class="w-[1.9rem] ml-[-2rem] " />
+                                        <img src={userprofile} class="w-[1.9rem] ml-[-2rem]  " />
                                         <div class="font-medium dark:text-white">
                                             <div>Rustia Sabino</div>
-                                            <div class="text-sm text-gray-500 dark:text-gray-400">Joined in February 20,2023</div>
+                                            <div class="text-sm text-black dark:text-gray-400">Joined in February 20,2023</div>
                                         </div>
 
 
@@ -124,16 +127,16 @@ const Navbar = () => {
             </nav>
 
             {/* create poll form */}
-            <div class="ml-[19.9rem] border mt-4 w-[55rem] rounded-lg z-50 p-4">
+            <div class="ml-[19.9rem] border border-blue-200 mt-4 w-[55rem] rounded-lg z-50 p-4">
                 <form class="w-full" autocomplete="off">
                     <div class="mb-6">
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
                         
-                        <input class="shadow-sm bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Type Here" required />
+                        <input class="shadow-sm bg-blue-200 border border-gray-300 text-gray-900 text-sm text-Bold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-50 dark:border-gray-600 dark:placeholder-white-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  placeholder="Type Here" required />
                     </div>
 
                     <h3 class="mb-4 h-15 text-sm font-semibold text-gray-900 dark:text-white">Types of Voting</h3>
-                    <ul class="items-center  text-sm font-medium text-gray-900 bg-blue-50 border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                    <ul class="items-center  text-sm font-medium text-gray-900 bg-blue-200 border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
                         <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                             <div class="flex items-center pl-3">
                                 <input id="vue-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
@@ -153,28 +156,38 @@ const Navbar = () => {
                             </div>
                         </li>
                     </ul>
-                    <div class="mb-6 h-15" autocomplete='off'>
-                        <label class="block mt-6 h-5 text-sm font-medium text-gray-900 dark:text-white">Option</label>
-                        <input autocomplete='off' class="shadow-sm mt-3 bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+                    <div class= "mb-6 h-15" autocomplete='off'>
+                        <label class="block mt-4 h-3 text-sm font-medium text-gray-900 dark:text-white">Option</label>
+                        <img src={imgdelete} class="h-4 ml-[22rem] mt-[2rem] w-[13.8rem]" />
+                        <img src={imgcorrect} class="h-4 ml-[20rem] mt-[-1rem] w-[13.8rem]" />
+                        <input autocomplete='off' class="shadow-sm mt-3 bg-blue-200 border border-gray-300 text-gray-900 text-sm mt-[-2rem] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[30rem] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
                     </div>
+                    
                     <div class="mb-6 h-10">
-                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
-                        <input autocomplete='off' class="shadow-sm bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
-                    </div>
+                    <label class="block mt-6 h-5 text-sm font-medium text-gray-900 dark:text-white"></label>
+                        <img src={imgdelete} class="h-4 ml-[22rem] w-[13.8rem]" />
+                        <img src={imgcorrect} class="h-4 ml-[20rem] mt-[-1rem] w-[13.8rem]" />
+                        <input autocomplete='off' class="shadow-sm mt-3 bg-blue-200 border border-gray-300 text-gray-900 text-sm mt-[-2rem] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[30rem] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+                   </div>
                     <div class="mb-8">
-                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
-                        <input autocomplete='off' class="shadow-sm bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
-                    </div>
-                    <div class=' mt-[-1.6rem] ml-[26.4rem] h-full'>
+                    <label class="block mt-6 h-5 text-sm font-medium text-gray-900 dark:text-white"></label>
+                        <img src={imgdelete} class="h-4 ml-[22rem] w-[13.8rem]" />
+                        <img src={imgcorrect} class="h-4 ml-[20rem] mt-[-1rem] w-[13.8rem]" />
+                        <input autocomplete='off' class="shadow-sm mt-3 bg-blue-200 border border-gray-300 text-gray-900 text-sm mt-[-2rem] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[30rem] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+                   </div>
+                    <div class='mt-[-1.3rem] ml-[3.8rem] h-full'>
                         <button class="relative inline-flex items-center justify-center p-0.5  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group ml-80 bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
                             <span class="relative px-1 py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                                 + Add Option
                             </span>
                         </button>
-                        <button type="submit" class="text-white flex mr-[7rem] mt-1` bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Done</button>
-
                     </div>
                 </form>
+                <button class="relative inline-flex items-center justify-center p-0.5 mt-1 ml-[48rem] overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+  <span class="relative px-3 py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+      Submit
+  </span>
+</button>
             </div>
 
         </div>

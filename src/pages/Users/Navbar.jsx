@@ -6,7 +6,7 @@ import details from '../../assets/icons/details.svg'
 import logo from '../../assets/logo/logo.png'
 import userprofile from '../../assets/icons/userprofile.svg'
 import signout from '../../assets/icons/signout.svg'
-
+import men from '../../assets/icons/men.svg'
 const Navbar = () => {
     return (
         <div>
@@ -58,99 +58,42 @@ const Navbar = () => {
                 </div>
 
                 {/* dashboard */}
-                <div>
-
-                    <button data-drawer-target="separator-sidebar" data-drawer-toggle="separator-sidebar" aria-controls="separator-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                        <span class="sr-only">Open sidebar</span>
-                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
-                        </svg>
-                    </button>
-
-                    <aside id="separator-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-                        {/* side bar */}
-                        <div class="h-full px-3 py-4 overflow-y-auto bg-blue-50 dark:bg-blue-800 mt-20 border-r">
-                            <ul class="space-y-2 font-medium">
-                                <li>
-                                    <a href="/" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <img src={answer} class="w-[1.45rem]" />
-                                        <svg aria-hidden="true" class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"></svg>
-                                        <span class="ml-[-0.8rem]">Answer</span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="/results" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <img src={result} class="w-[1.7rem] ml-[-0.1rem]" />
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"></svg>
-                                        <span class="flex-1 ml-[-0.8rem] whitespace-nowrap">View Results</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/report" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <img src={details} class="w-[1.7rem]" />
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"></svg>
-                                        <span class="flex-1 ml-[-0.8rem] whitespace-nowrap">Report</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <img src={signout} class="w-[1.7rem]" />
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"></svg>
-                                        <span class="flex-1 ml-[-0.8rem]  whitespace-nowrap">Sign Out</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="pt-5 mt-56 w-[16rem]  space-y-3 font-medium border-t border-blue-600 dark:border-gray-900">
-
-                                <li>
-                                    {/**UserProfile */}
-                                    <div class="flex items-center justify-center space-x-0.9 ml-[0.40rem]">
-                                        <img src={userprofile} class="w-[1.9rem] ml-[-2rem] " />
-                                        <div class="font-medium dark:text-white">
-                                            <div>Rustia Sabino</div>
-                                            <div class="text-sm text-gray-500 dark:text-gray-400">Joined in February 20,2023</div>
-                                        </div>
-
-
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </aside>
-                </div>
+               
 
             </nav>
-
             {/* create poll form */}
             <div class="ml-[19.9rem] border mt-4 w-[55rem] rounded-lg z-50 p-4">
                 <form class="w-full" autocomplete="off">
                     <div class="mb-6">
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
-                        <input class="shadow-sm bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Type Here" required />
+                        <div class="flex items-center space-x-4">
+                            <img src={men} class="w-[1.9rem] ml-[1rem] " />
+                            <div class="font-medium dark:text-white">
+                                <div>Aram Mc Marcelino</div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">Joined in February 20,2023</div>
+                            </div>
+                        </div>
+                        <button type="button" class="py-1 px-5 w-full mr-10 mt-4 text-3x1 font-medium text-gray-900 focus:outline-none bg-blue-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">What Programming Language did you use? </button>
+
                     </div>
 
-                    <div class="mb-6 h-15" autocomplete='off'>
-                        <label class="block mt-6 h-5 text-sm font-medium text-gray-900 dark:text-white">Choice Your Answer</label>
-                        <input autocomplete='off' class="shadow-sm mt-3 bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
-                    </div>
-                    <div class="mb-6 h-10">
-                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
-                        <input autocomplete='off' class="shadow-sm bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+                    <div class="mb-6 h-15 mr-[40rem]" autocomplete='off'>
+                    <button type="button" class="py-2.5 px-5 w-full mr-10 mb-2 text-3x1 font-medium text-gray-900 focus:outline-none bg-blue-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">C#</button>
+                    <button type="button" class="py-2.5 px-5 w-full mr-10 mb-2 text-3x1 font-medium text-gray-900 focus:outline-none bg-blue-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">PHP</button>
+                    <button type="button" class="py-2.5 px-5 w-full mr-10 mb-2 text-3x1 font-medium text-gray-900 focus:outline-none bg-blue-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Javascript</button>
                     </div>
                     <div class="mb-8">
-                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
-                        <input autocomplete='off' class="shadow-sm bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
                     </div>
-                    <div class=' mt-[1rem] ml-[26.4rem] h-full'>
-                        <button type="submit" class="text-white flex mr-[7rem] mt-1` bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Done</button>
-
-                    </div>
+                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Back to Poll
+                        <svg aria-hidden="true" class="w-5 h-5 ml-3 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
                 </form>
+                <div class='mt-[-2.4rem] ml-[35rem] h-full'>
+                    <button type=" View Result" class="text-white flex mr-[7rem] mt-[4rem]` w-18 h-10 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View Results</button>
+                </div>
             </div>
-
         </div>
+
     )
 }
 
