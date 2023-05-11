@@ -4,6 +4,7 @@ import answer from '../../assets/icons/answer.svg'
 import result from '../../assets/icons/result.svg'
 import details from '../../assets/icons/details.svg'
 import logo from '../../assets/logo/logo.png'
+import wallpaper from '../../assets/icons/wallpaper.png'
 import userprofile from '../../assets/icons/userprofile.svg'
 import signout from '../../assets/icons/signout.svg'
 import men from '../../assets/icons/men.svg'
@@ -12,13 +13,13 @@ const Navbar = () => {
         <div>
             {/* top navigation bar */}
             <nav class="bg-white border-gray-200 dark:bg-gray-900">
-                <div class="border-b ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
+                <div class="border-b border-blue-200 ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
                     <a href="/" class="inline-flex items-center">
                         <img src={logo} class="h-7  ml-1 w-[13.8rem]" />
                     </a>
 
                     <div class="w-[20rem] mt-2 ml-60">
-                        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-00 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             <li>
                                 <a href="home" class="block py-3 text-[1.1rem] w-9 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 mr-20" aria-current="page">Home</a>
                             </li>
@@ -27,7 +28,6 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </div>
-
 
                     <div class="flex md:order-2 mt-[-1rem]">
                         <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
@@ -58,11 +58,13 @@ const Navbar = () => {
                 </div>
 
                 {/* dashboard */}
-               
+                <div class="h-[33.4rem] ml-[-1] w-[15rem]">
+                    <img src={wallpaper} class="h-full " />
+                </div>
 
             </nav>
             {/* create poll form */}
-            <div class="ml-[19.9rem] border mt-4 w-[55rem] rounded-lg z-50 p-4">
+            <div class="ml-[19.9rem] border border-blue-200 mt-[-30rem] w-[55rem] rounded-lg z-50 p-4">
                 <form class="w-full" autocomplete="off">
                     <div class="mb-6">
                         <div class="flex items-center space-x-4">
@@ -72,24 +74,27 @@ const Navbar = () => {
                                 <div class="text-sm text-gray-500 dark:text-gray-400">Joined in February 20,2023</div>
                             </div>
                         </div>
-                        <button type="button" class="py-1 px-5 w-full mr-10 mt-4 text-3x1 font-medium text-gray-900 focus:outline-none bg-blue-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">What Programming Language did you use? </button>
+                        <button type="button" class="py-1 px-5 w-full mr-10 mt-4 text-3x1 font-medium text-gray-900 focus:outline-none bg-blue-200 rounded-lg border border-blue-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">What Programming Language did you use? </button>
 
                     </div>
 
                     <div class="mb-6 h-15 mr-[40rem]" autocomplete='off'>
-                    <button type="button" class="py-2.5 px-5 w-full mr-10 mb-2 text-3x1 font-medium text-gray-900 focus:outline-none bg-blue-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">C#</button>
-                    <button type="button" class="py-2.5 px-5 w-full mr-10 mb-2 text-3x1 font-medium text-gray-900 focus:outline-none bg-blue-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">PHP</button>
-                    <button type="button" class="py-2.5 px-5 w-full mr-10 mb-2 text-3x1 font-medium text-gray-900 focus:outline-none bg-blue-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Javascript</button>
+                        <button type="button" class="py-2.5 px-5 w-[30rem] mr-10 mb-2 text-3x1 font-medium text-gray-900 focus:outline-none bg-blue-200 rounded-lg border border-blue-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">C#</button>
+                        <button type="button" class="py-2.5 px-5 w-[30rem] mr-10 mb-2 text-3x1 font-medium text-gray-900 focus:outline-none bg-blue-200 rounded-lg border border-blue-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">PHP</button>
+                        <button type="button" class="py-2.5 px-5 w-[30rem] mr-10 mb-2 text-3x1 font-medium text-gray-900 focus:outline-none bg-blue-200 rounded-lg border border-blue-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Javascript</button>
                     </div>
-                    <div class="mb-8">
+                    <div class="ml-4">
                     </div>
                     <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         Back to Poll
-                        <svg aria-hidden="true" class="w-5 h-5 ml-3 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <svg aria-hidden="true" class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </button>
                 </form>
-                <div class='mt-[-2.4rem] ml-[35rem] h-full'>
-                    <button type=" View Result" class="text-white flex mr-[7rem] mt-[4rem]` w-18 h-10 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View Results</button>
+                <div class="mt-3">
+                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <img src={result} class="h-5 w-5" />
+                        View Results
+                    </button>
                 </div>
             </div>
         </div>
