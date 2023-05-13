@@ -69,7 +69,7 @@ const Result = () => {
 
           <aside id="separator-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
             {/* side bar */}
-            <div class="h-full px-3 py-4 overflow-y-auto bg-blue-50 dark:bg-blue-800 mt-20 border-r">
+            <div class="h-full px-3 py-4 overflow-y-auto bg-blue-200 dark:bg-blue-800 mt-20 border-r">
               <ul class="space-y-2 font-medium">
                 <li>
                   <a href="/" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -102,7 +102,7 @@ const Result = () => {
                   </a>
                 </li>
               </ul>
-              <ul class="pt-5 mt-56 w-[16rem]  space-y-3 font-medium border-t border-blue-600 dark:border-gray-900">
+              <ul class="pt-5 mt-56 w-[16rem]  space-y-3 font-medium border-t border-white dark:border-gray-900">
 
                 <li>
                   {/**UserProfile */}
@@ -110,7 +110,7 @@ const Result = () => {
                                         <img src={userprofile} class="w-[1.9rem] ml-[-2rem] " />
                                         <div class="font-medium dark:text-white">
                                             <div>Rustia Sabino</div>
-                                            <div class="text-sm text-gray-500 dark:text-gray-400">Joined in February 20,2023</div>
+                                            <div class="text-sm text-black-500  dark:text-gray-400">Joined in February 20,2023</div>
                                         </div>
 
 
@@ -128,7 +128,7 @@ const Result = () => {
         <div class="mb-7">
           
           <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
-          <input class="shadow-sm bg-blue-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Type Here" required />
+          <input class="shadow-sm bg-blue-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Type Here" required />
         </div>
         <div>
 
@@ -149,7 +149,7 @@ const Result = () => {
         <h1 class="text- ml-96 text-blue-700  dark:text-white">Total Votes= 50</h1>
        
 
-<a href="#" class="inline-flex items-center justify-center px-1 py-1 h-5 mt-5 text-base font-xs text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+<a href="/" class="inline-flex items-center justify-center px-1 py-1 h-5 mt-5 text-base font-xs text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
     Back to Poll
     <svg class="w-3.7 h-5 ml-3 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 </a>

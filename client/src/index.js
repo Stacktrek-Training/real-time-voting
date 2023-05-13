@@ -8,9 +8,8 @@ import Report from './pages/Admin/Report'
 import About from './pages/Admin/AboutPage'
 import Home from './pages/Admin/Home.jsx'
 import Nav2 from './pages/Users/Navbar'
-import Meeting from './pages/Admin/Meeting'
-import Multiplechoice from './pages/Admin/Multiple'
 import Finish from './pages/Admin/Finish'
+import Userresult from './pages/Users/Result'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -62,26 +61,19 @@ const router = createBrowserRouter([
     </div>,
   },
   {
-    path: "/multiplechoices",
-    element: 
-    <div>
-      <Multiplechoice />
-    </div>,
-  },
-  {
-    path: "/meeting",
-    element: 
-    <div>
-      <Meeting />
-    </div>,
-  },
-  {
     path: "/finish",
     element: 
     <div>
       <Finish />
     </div>,
   },
+  {
+    path: "/userresult",
+    element: 
+    <div>
+      <Userresult />
+    </div>,
+  }
 ]);
   
 

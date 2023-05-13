@@ -6,13 +6,15 @@ import details from '../../assets/icons/details.svg'
 import logo from '../../assets/logo/logo.png'
 import userprofile from '../../assets/icons/userprofile.svg'
 import signout from '../../assets/icons/signout.svg'
+import imgcorrect from '../../assets/icons/imgcorrect.svg'
+import imgdelete from '../../assets/icons/imgdelete.svg'
 
 const Navbar = () => {
     return (
         <div>
 
             {/* top navigation bar */}
-            <nav class="bg-white border-gray-200 dark:bg-gray-900">
+            <nav class="bg-white border-gray-200 dark:bg-gray-900 ">
                 <div class="border-b border-blue-200 ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
                     <a href="/" class="inline-flex items-center">
                         <img src={logo} class="h-7  ml-1 w-[13.8rem]" />
@@ -124,27 +126,50 @@ const Navbar = () => {
 
             </nav>
 
-            <div class="w-[15rem] p-8 ml-[42rem] mt-[7.2rem] bg-white border border-blue-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <p class="mb-3 font-semibold text-center text-gray-700 dark:text-gray-400">Meeting Poll</p>
-                <a href="/meeting" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full justify-center mt-4">
-                    Open
-                    <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </a>
-            </div>
-            <div class="w-[15rem] p-8 ml-[20rem] mt-[-9.6rem] bg-white border border-blue-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <p class="mb-3 font-semibold text-center text-gray-700 dark:text-gray-400">Multipe Choice</p>
-                <a href="/multiplechoices" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full justify-center mt-4">
-                    Open
-                    <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </a>
-            </div>
-            <div class="w-[15rem] p-8 ml-[65rem] mt-[-9.6rem] bg-white border border-blue-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <p class="mb-3 font-semibold text-center text-gray-700 dark:text-gray-400">Meeting Poll</p>
-                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full justify-center mt-4">
-                    Open
-                    <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </a>
-            </div>
+            {/* create poll form */}
+      <div class="ml-[19.9rem] border border-blue-200 mt-4 w-[55rem] rounded-lg z-20 p-4">
+        <form class="w-full" autocomplete="off">
+          <div class="mb-6">
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
+
+            <input class="shadow-sm bg-blue-200 border border-gray-300 text-gray-900 text-sm text-Bold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-50 dark:border-gray-600 dark:placeholder-white-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Type Here" required />
+          </div>
+          <div class="mb-6 h-15" autocomplete='off'>
+            <label class="block mt-4 h-3 text-sm font-medium text-gray-900 dark:text-white">Option</label>
+            <img src={imgdelete} class="h-4 ml-[22rem] mt-[2rem] w-[13.8rem]" />
+            <img src={imgcorrect} class="h-4 ml-[20rem] mt-[-1rem] w-[13.8rem]" />
+            <input autocomplete='off' class="shadow-sm mt-3 bg-blue-200 border border-gray-300 text-gray-900 text-sm mt-[-2rem] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[30rem] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+          </div>
+
+          <div class="mb-6 h-10">
+            <label class="block mt-6 h-5 text-sm font-medium text-gray-900 dark:text-white"></label>
+            <img src={imgdelete} class="h-4 ml-[22rem] w-[13.8rem]" />
+            <img src={imgcorrect} class="h-4 ml-[20rem] mt-[-1rem] w-[13.8rem]" />
+            <input autocomplete='off' class="shadow-sm mt-3 bg-blue-200 border border-gray-300 text-gray-900 text-sm mt-[-2rem] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[30rem] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+          </div>
+          <div class="mb-8">
+            <label class="block mt-6 h-5 text-sm font-medium text-gray-900 dark:text-white"></label>
+            <img src={imgdelete} class="h-4 ml-[22rem] w-[13.8rem]" />
+            <img src={imgcorrect} class="h-4 ml-[20rem] mt-[-1rem] w-[13.8rem]" />
+            <input autocomplete='off' class="shadow-sm mt-3 bg-blue-200 border border-gray-300 text-gray-900 text-sm mt-[-2rem] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[30rem] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+          </div>
+          <div class='mt-[-1.3rem] ml-[3.8rem] h-full'>
+            <button class="relative inline-flex items-center justify-center p-0.5  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group ml-80 bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+              <span class="relative px-1 py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                + Add Option
+              </span>
+            </button>
+          </div>
+        </form>
+        <a href="/finish">
+        <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="relative inline-flex items-center justify-center p-0.5 mt-1 ml-[48rem] overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+          <span class="relative px-3 py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            Finish
+          </span>
+        </button>
+</a>
+
+      </div>
 
         </div>
     )

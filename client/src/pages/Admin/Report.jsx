@@ -67,7 +67,7 @@ const Report = () => {
 
           <aside id="separator-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
             {/* side bar */}
-            <div class="h-full px-3 py-4 overflow-y-auto bg-blue-50 dark:bg-blue-800 mt-20 border-r">
+            <div class="h-full px-3 py-4 overflow-y-auto bg-blue-200 dark:bg-blue-800 mt-20 border-r">
               <ul class="space-y-2 font-medium">
                 <li>
                   <a href="/" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -100,7 +100,8 @@ const Report = () => {
                   </a>
                 </li>
               </ul>
-              <ul class="pt-5 mt-56 w-[16rem]  space-y-3 font-medium border-t border-blue-600 dark:border-gray-900">
+              <ul class="pt-5 mt-56 w-[16rem]  space-y-3 font-medium border-t border-white dark:border-gray-900">
+
 
                 <li>
                   {/**UserProfile */}
@@ -108,7 +109,7 @@ const Report = () => {
                     <img src={userprofile} class="w-[1.9rem] ml-[-2rem] " />
                     <div class="font-medium dark:text-white">
                       <div>Rustia Sabino</div>
-                      <div class="text-sm text-gray-500 dark:text-gray-400">Joined in February 20,2023</div>
+                      <div class="text-sm text-black dark:text-gray-400">Joined in February 20,2023</div>
                     </div>
 
 
