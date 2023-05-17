@@ -11,7 +11,7 @@ const Result = () => {
   return (
     <div>
       {/* top navigation bar */}
-      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <nav class="bg-white border-gray-200  dark:bg-gray-900">
         <div class="border-b ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
           <a href="/" class="inline-flex items-center">
             <img src={logo} class="h-7  ml-1 w-[13.8rem]" />
@@ -124,7 +124,7 @@ const Result = () => {
       </nav>
 
       {/* view result */}
-      <div class="ml-[19.9rem] border mt-4 w-[55rem] rounded-lg z-50 p-4">
+      <div class="ml-[23rem] border border-blue-500 mt-[3.5rem] w-[55rem] rounded-lg z-50 p-4">
         <div class="mb-7">
           
           <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
@@ -149,7 +149,7 @@ const Result = () => {
         <h1 class="text- ml-96 text-blue-700  dark:text-white">Total Votes= 50</h1>
        
 
-<a href="/" class="inline-flex items-center justify-center px-1 py-1 h-5 mt-5 text-base font-xs text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+<a href="/" class="inline-flex items-center justify-center pt-3.5 px-2 py-5 h-4 mt-4 text-base font-xs text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
     Back to Poll
     <svg class="w-3.7 h-5 ml-3 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 </a>
