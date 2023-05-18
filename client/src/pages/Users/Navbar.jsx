@@ -13,7 +13,7 @@ const Navbar = () => {
         <div>
             {/* top navigation bar */}
             <nav class="bg-white border-gray-200 dark:bg-gray-900">
-                <div class="border-b border-blue-200 ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
+            <div class="border-b border-blue-500 mt-[-0.5rem] ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
                     <a href="/" class="inline-flex items-center">
                         <img src={logo} class="h-7  ml-1 w-[13.8rem]" />
                     </a>
@@ -31,7 +31,7 @@ const Navbar = () => {
 
                     <div class="flex md:order-2 mt-[-1rem]">
                         <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
-                            <svg class="w-5 mt-[2-rem] h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                            <svg class="w-5 mt-[1-rem] h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                             <span class="sr-only">Search</span>
                         </button>
                         <div class="relative hidden md:block">
@@ -58,13 +58,13 @@ const Navbar = () => {
                 </div>
 
                 {/* dashboard */}
-                <div class="h-[33.4rem] ml-[-1] w-[15rem]">
+                <div class="h-[34.4rem] ml-[-1] w-[15.6rem]">
                     <img src={wallpaper} class="h-full " />
                 </div>
 
             </nav>
             {/* create poll form */}
-            <div class="ml-[19.9rem] border border-blue-200 mt-[-30rem] w-[55rem] rounded-lg z-50 p-4">
+            <div class="ml-[22rem] border border-blue-500 mt-[-31rem] w-[55rem] rounded-lg z-50 p-4">
                 <form class="w-full" autocomplete="off">
                     <div class="mb-6">
                         <div class="flex items-center space-x-4">

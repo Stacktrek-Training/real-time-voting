@@ -12,7 +12,7 @@ const Result = () => {
     <div>
       {/* top navigation bar */}
       <nav class="bg-white border-gray-200  dark:bg-gray-900">
-        <div class="border-b ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
+        <div class="border-b border-blue-500 ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
           <a href="/" class="inline-flex items-center">
             <img src={logo} class="h-7  ml-1 w-[13.8rem]" />
           </a>

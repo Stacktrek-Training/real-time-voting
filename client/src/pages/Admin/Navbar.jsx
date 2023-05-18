@@ -15,7 +15,7 @@ const Navbar = () => {
 
             {/* top navigation bar */}
             <nav class="bg-white border-gray-200 dark:bg-gray-900 ">
-                <div class="border-b border-blue-200 ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
+                <div class="border-b border-blue-500 mt-[-0.5rem] ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
                     <a href="/" class="inline-flex items-center">
                         <img src={logo} class="h-7  ml-1 w-[13.8rem]" />
                     </a>
@@ -72,7 +72,7 @@ const Navbar = () => {
 
                     <aside id="separator-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
                         {/* side bar */}
-                        <div class="h-full px-3 py-4 overflow-y-auto bg-blue-200 dark:bg-blue-800 mt-20 border-r">
+                        <div class="h-full px-3 py-4 overflow-y-auto bg-blue-200 dark:bg-blue-800 mt-[4.6rem] border-r">
                             <ul class="space-y-2 font-medium">
                                 <li>
                                     <a href="/" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -127,10 +127,10 @@ const Navbar = () => {
             </nav>
 
             {/* create poll form */}
-      <div class="ml-[19.9rem] border border-blue-200 mt-4 w-[55rem] rounded-lg z-20 p-4">
+      <div class="ml-[19.9rem] border border-blue-500 mt-[3.5rem] w-[55rem] rounded-lg z-20 p-4">
         <form class="w-full" autocomplete="off">
           <div class="mb-6">
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
+            <label for="type" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
 
             <input class="shadow-sm bg-blue-200 border border-gray-300 text-gray-900 text-sm text-Bold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-50 dark:border-gray-600 dark:placeholder-white-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Type Here" required />
           </div>

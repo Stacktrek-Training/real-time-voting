@@ -10,12 +10,11 @@ const Home = () => {
   return (
     <div>
         {/* top navigation bar */}
-            <nav class="bg-white border-blue-200 dark:bg-gray-900">
-                <div class="border-b mt-[2rem] ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
+            <nav class="bg-white border-gray-200 dark:bg-gray-900 ">
+                <div class="border-b border-blue-500 mt-[-0.5rem] ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
                     <a href="/" class="inline-flex items-center">
                         <img src={logo} class="h-7  ml-1 w-[13.8rem]" />
                     </a>
-
                     <div class="w-[20rem] mt-2 ml-60">
                         <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             <li>
@@ -55,6 +54,15 @@ const Home = () => {
 
                     </div>
                 </div>
+<div class="mt-[5rem] ml-[30rem] ">         
+<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/docs/images/blog/image-4.jpg" alt=""/>
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-7xl w-[full] font-bold tracking-tight text-gray-900 dark:text-white">Real Time Voting System</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
+    </div>
+</a>
+</div>
 
                 {/* dashboard */}
                 <div>
@@ -68,7 +76,7 @@ const Home = () => {
 
                     <aside id="separator-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
                         {/* side bar */}
-                        <div class="h-full px-3 py-4 overflow-y-auto bg-blue-50 dark:bg-blue-800 mt-20 border-r">
+                        <div class="h-full px-3 py-4 overflow-y-auto bg-blue-200 dark:bg-blue-800 mt-[4.6rem] border-r">
                             <ul class="space-y-2 font-medium">
                                 <li>
                                     <a href="/" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -100,7 +108,7 @@ const Home = () => {
                                     </a>
                                 </li>
                             </ul>
-                            <ul class="pt-5 mt-56 w-[16rem]  space-y-3 font-medium border-t border-blue-600 dark:border-gray-900">
+                            <ul class="pt-5 mt-56 w-[16rem]  space-y-3 font-medium border-t border-white dark:border-gray-900">
 
                                 <li>
                                     {/**UserProfile */}
@@ -110,13 +118,6 @@ const Home = () => {
                                             <div>Rustia Sabino</div>
                                             <div class="text-sm text-gray-500 dark:text-gray-400">Joined in February 20,2023</div>
                                         </div>
-
-
-{/**Home*/}
-<div>
-
-</div>
-
                                     </div>
                                 </li>
                             </ul>
@@ -127,6 +128,7 @@ const Home = () => {
 
             </nav>
     </div>
+    
   )
 }
 

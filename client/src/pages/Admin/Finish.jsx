@@ -133,7 +133,7 @@ const Finish = () => {
             <img src={successlogo} class="w-[1.7rem] ml-[12rem]" />
                 <h3 class="mb-5 text-lg font-normal font-semibold text-blue-500 dark:text-blue-900">Poll added!</h3>
                 <a href="/results">
-                <button data-modal-hide="popup-modal" type="button" class="text-blue-900 bg-blue-200 hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                <button data-modal-hide="popup-modal" type="button" class="text-blue-900 bg-blue-500 hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
                     Done
                 </button>
                 </a>

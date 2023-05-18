@@ -7,11 +7,11 @@ const About = () => {
   return (
     <div>
       {/* top navigation bar */}
-      <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="border-b border-blue-200 ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
-          <a href="/" class="inline-flex items-center">
-            <img src={logo} class="h-7  ml-1 w-[13.8rem]" />
-          </a>
+      <nav class="bg-white border-gray-200 dark:bg-gray-900 ">
+                <div class="border-b border-blue-500 mt-[-0.5rem] ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
+                    <a href="/" class="inline-flex items-center">
+                        <img src={logo} class="h-7  ml-1 w-[13.8rem]" />
+                    </a>
 
           <div class="w-[20rem] mt-2 ml-60">
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -64,8 +64,8 @@ const About = () => {
           </button>
   
 
-                        <div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
-    <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
+                        <div class="grid mb-8 border border-blue-500 rounded-lg shadow-sm dark:border-blue-500 mt-[2rem] md:mb-12 md:grid-cols-2">
+    <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-blue-500 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
     <img src={img2} class="w-[17rem] h-[12rem] mt-[-2rem]" />
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Real Time Voting </h3>
@@ -76,7 +76,7 @@ const About = () => {
             </div>
         </figcaption>    
     </figure>
-    <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
+    <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-blue-500 rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
     <img src={Ballot} class="w-[3rem] mt-[-1rem]" />
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Advantage</h3>
