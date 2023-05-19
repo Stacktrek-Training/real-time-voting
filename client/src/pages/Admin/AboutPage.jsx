@@ -8,10 +8,10 @@ const About = () => {
     <div>
       {/* top navigation bar */}
       <nav class="bg-white border-gray-200 dark:bg-gray-900 ">
-                <div class="border-b border-blue-500 mt-[-0.5rem] ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
-                    <a href="/" class="inline-flex items-center">
-                        <img src={logo} class="h-7  ml-1 w-[13.8rem]" />
-                    </a>
+        <div class="border-b border-blue-500 mt-[-0.5rem] ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
+          <a href="/" class="inline-flex items-center">
+            <img src={logo} class="h-7  ml-1 w-[13.8rem]" />
+          </a>
 
           <div class="w-[20rem] mt-2 ml-60">
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -62,40 +62,40 @@ const About = () => {
               <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
             </svg>
           </button>
-  
 
-                        <div class="grid mb-8 border border-blue-500 rounded-lg shadow-sm dark:border-blue-500 mt-[2rem] md:mb-12 md:grid-cols-2">
-    <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-blue-500 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
-    <img src={img2} class="w-[17rem] h-[12rem] mt-[-2rem]" />
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Real Time Voting </h3>
-            <p class="my-4">is a direct democracy strategy that would allow voters to represent themselves online, enhancing accountability.</p>
-        </blockquote>
-        <figcaption class="flex items-center justify-center space-x-3">
-            <div class="space-y-0.5 font-medium dark:text-white text-left">
-            </div>
-        </figcaption>    
-    </figure>
-    <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-blue-500 rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
-    <img src={Ballot} class="w-[3rem] mt-[-1rem]" />
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Advantage</h3>
-            <p class="my-4">The incredible efficiency of online voting systems is one of its most important advantages. Voting on paper traditionally involves many processes, from printing ballots to manually tallying the results. Online voting makes all of it unnecessary.
 
-With an online system, you can quickly and easily distribute electronic ballots to each and every voter. Additionally, the system will automatically total the results after the voting period is over, saving you time and money and helping your organization.
-</p>
-        </blockquote>
-        <figcaption class="flex items-center justify-center space-x-3">
-            <div class="space-y-0.5 font-medium dark:text-white text-left">
-            </div>
-        </figcaption>    
-    </figure>
-   
-</div>
-
-                    
+          <div class="grid mb-8 mt rounded-lg shadow-sm dark:border-blue-500 mt-[0.15rem] md:mb-12 md:grid-cols-2">
+            <figure class="flexborder-b border flex-col items-center justify-center p-8 text-center bg-blue-200 -blue-500 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
+              <img src={img2} class="w-[17rem] h-[12rem] mt-[-3rem] ml-[11.5rem]" />
+              <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Real Time Voting </h3>
+                <p class="my-4">is a direct democracy strategy that would allow voters to represent themselves online, enhancing accountability.</p>
+              </blockquote>
+              <figcaption class="flex items-center justify-center space-x-3">
+                <div class="space-y-0.5 font-medium dark:text-white text-left">
                 </div>
-                </nav>
+              </figcaption>
+            </figure>
+            <figure class="flex flex-col items-center justify-center p-8 text-center bg-blue-200  rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
+              <img src={Ballot} class="w-[3rem] mt-[-1rem]" />
+              <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Advantage</h3>
+                <p class="my-4">The incredible efficiency of online voting systems is one of its most important advantages. Voting on paper traditionally involves many processes, from printing ballots to manually tallying the results. Online voting makes all of it unnecessary.
+
+                  With an online system, you can quickly and easily distribute electronic ballots to each and every voter. Additionally, the system will automatically total the results after the voting period is over, saving you time and money and helping your organization.
+                </p>
+              </blockquote>
+              <figcaption class="flex items-center justify-center space-x-3">
+                <div class="space-y-0.5 font-medium dark:text-white text-left">
+                </div>
+              </figcaption>
+            </figure>
+
+          </div>
+
+
+        </div>
+      </nav>
     </div>
   )
 }

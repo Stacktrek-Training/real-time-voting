@@ -1,15 +1,13 @@
 import React from 'react'
 import 'flowbite'
-import create from '../../assets/icons/create.svg'
-import result from '../../assets/icons/result.svg'
 import details from '../../assets/icons/details.svg'
 import logo from '../../assets/logo/logo.png'
-import userprofile from '../../assets/icons/userprofile.svg'
-import signout from '../../assets/icons/signout.svg'
+import img1 from '../../assets/icons/img1.png'
+
 const Home = () => {
-  return (
-    <div>
-        {/* top navigation bar */}
+    return (
+        <div>
+            {/* top navigation bar */}
             <nav class="bg-white border-gray-200 dark:bg-gray-900 ">
                 <div class="border-b border-blue-500 mt-[-0.5rem] ml-8max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-[5.1rem]">
                     <a href="/" class="inline-flex items-center">
@@ -51,85 +49,22 @@ const Home = () => {
                             </div>
                             <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." />
                         </div>
-
                     </div>
                 </div>
-<div class="mt-[5rem] ml-[30rem] ">         
-<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/docs/images/blog/image-4.jpg" alt=""/>
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-7xl w-[full] font-bold tracking-tight text-gray-900 dark:text-white">Real Time Voting System</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
-    </div>
-</a>
-</div>
-
-                {/* dashboard */}
-                <div>
-
-                    <button data-drawer-target="separator-sidebar" data-drawer-toggle="separator-sidebar" aria-controls="separator-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                        <span class="sr-only">Open sidebar</span>
-                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
-                        </svg>
-                    </button>
-
-                    <aside id="separator-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-                        {/* side bar */}
-                        <div class="h-full px-3 py-4 overflow-y-auto bg-blue-200 dark:bg-blue-800 mt-[4.6rem] border-r">
-                            <ul class="space-y-2 font-medium">
-                                <li>
-                                    <a href="/" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <img src={create} class="w-[1.45rem]" />
-                                        <svg aria-hidden="true" class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"></svg>
-                                        <span class="ml-[-0.8rem]">Create Poll</span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="/results" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <img src={result} class="w-[1.7rem] ml-[-0.1rem]" />
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"></svg>
-                                        <span class="flex-1 ml-[-0.8rem] whitespace-nowrap">View Results</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/report" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <img src={details} class="w-[1.7rem]" />
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"></svg>
-                                        <span class="flex-1 ml-[-0.8rem] whitespace-nowrap">Report</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <img src={signout} class="w-[1.7rem]" />
-                                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"></svg>
-                                        <span class="flex-1 ml-[-0.8rem]  whitespace-nowrap">Sign Out</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="pt-5 mt-56 w-[16rem]  space-y-3 font-medium border-t border-white dark:border-gray-900">
-
-                                <li>
-                                    {/**UserProfile */}
-                                    <div class="flex items-center justify-center space-x-0.9 ml-[0.40rem]">
-                                        <img src={userprofile} class="w-[1.9rem] ml-[-2rem] " />
-                                        <div class="font-medium dark:text-white">
-                                            <div>Rustia Sabino</div>
-                                            <div class="text-sm text-gray-500 dark:text-gray-400">Joined in February 20,2023</div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </aside>
+                <div class="ml-[0.7rem] h-[33rem] mt-[0.5rem] w-[84rem] p-6 bg-blue-500 border-t border-blue-500 rounded-lg shadow dark:bg-blue-800 dark:border-blue-700">
+                    <a href="#">
+                    <img src={img1} class="h-[12rem] ml-[27rem] w-[28rem]" />
+                        <h5 class="mb-2 text-7xl w-[50rem] ml-[15.5rem] font-bold tracking-tight text-white dark:text-white">Real Time Voting System</h5>
+                    </a>
+                    <p class="mt-[12rem] font-normal text-white-700 dark:text-white-400"></p>
+                    <a href="/" class="inline-flex items-center ml[] px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Next
+                        <svg aria-hidden="true" class="w-4 h-4 ml-5 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
                 </div>
-
             </nav>
-    </div>
-    
-  )
+        </div>
+    )
 }
 
 export default Home

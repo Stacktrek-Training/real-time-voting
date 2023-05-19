@@ -73,7 +73,7 @@ const router = createBrowserRouter([
     <div>
       <Userresult />
     </div>,
-  }
+  },
 ]);
   
 
